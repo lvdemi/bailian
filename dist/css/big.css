@@ -1,0 +1,69 @@
+.seller {
+  width: 1190px;
+  height: 47px;
+  clear: both;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #666;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 30px; }
+  .seller .crumb {
+    float: left;
+    font-family: SimSun;
+    line-height: 24px;
+    width: 630px;
+    padding-top: 13px;
+    color: #333;
+    font-size: 12px; }
+    .seller .crumb i {
+      color: #999; }
+  .seller .seller-name {
+    float: right;
+    line-height: 50px; }
+    .seller .seller-name .seller-logo {
+      width: 118px;
+      height: 44px;
+      border: 1px solid #eee;
+      overflow: hidden;
+      float: right;
+      text-align: center; }
+      .seller .seller-name .seller-logo img {
+        width: 83px;
+        height: 44px; }
+
+.product-intro {
+  width: 1190px;
+  height: 598px;
+  margin: 0 auto;
+  background: yellow; }
+  .product-intro .intro-left {
+    float: left;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #fff;
+    position: absolute; }
+    .product-intro .intro-left img {
+      width: 100%;
+      height: 100%; }
+    .product-intro .intro-left .mark {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      display: none; }
+  .product-intro .big {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    border: 1px solid #fff;
+    left: 550px;
+    overflow: hidden;
+    display: none; }
+    .product-intro .big img {
+      width: 900px;
+      height: 900px;
+      position: absolute; }
