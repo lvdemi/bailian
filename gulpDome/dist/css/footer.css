@@ -1,0 +1,469 @@
+@charset "UTF-8";
+.helpnav-box {
+  height: 218px;
+  background: #f3f3f3; }
+  .helpnav-box .helpnav {
+    width: 1190px;
+    height: 218px;
+    background: #f3f3f3;
+    margin: 0 auto;
+    padding: 24px 0;
+    clear: both; }
+    .helpnav-box .helpnav .helpnav-list {
+      float: left;
+      width: 200px;
+      height: 170px;
+      margin: 0 19px;
+      display: inline-block; }
+      .helpnav-box .helpnav .helpnav-list .helpnav-title {
+        height: 40px;
+        line-height: 40px;
+        color: #000;
+        font-size: 16px; }
+        .helpnav-box .helpnav .helpnav-list .helpnav-title i {
+          display: inline-block;
+          float: left;
+          margin-right: 15px;
+          width: 40px;
+          height: 40px; }
+      .helpnav-box .helpnav .helpnav-list ul {
+        margin-left: 54px;
+        font-size: 14px;
+        color: #555; }
+        .helpnav-box .helpnav .helpnav-list ul li {
+          padding: 3px 0px; }
+          .helpnav-box .helpnav .helpnav-list ul li a:hover {
+            color: #e6133c;
+            text-decoration: underline; }
+
+/* bottom-nav */
+.bottom-box {
+  background: #f3f3f3;
+  height: 168px;
+  padding: 15px 0 0; }
+  .bottom-box .bottom-nav {
+    height: 168px;
+    width: 1190px;
+    margin: 0 auto; }
+    .bottom-box .bottom-nav div {
+      line-height: 24px;
+      text-align: center;
+      color: #999;
+      font-size: 12px; }
+      .bottom-box .bottom-nav div a {
+        color: #333; }
+    .bottom-box .bottom-nav .drug-message {
+      padding: 5px 0 0;
+      color: #666; }
+    .bottom-box .bottom-nav .police {
+      text-align: center;
+      padding: 10px 0 20px;
+      color: #999; }
+      .bottom-box .bottom-nav .police a {
+        margin-right: 10px; }
+      .bottom-box .bottom-nav .police img {
+        width: 20px;
+        height: 20px;
+        padding: 0 5px; }
+      .bottom-box .bottom-nav .police span {
+        margin: 0 0 0 5px;
+        color: #999; }
+
+/* banner-end */
+.new_tm-box {
+  height: 390px;
+  background: pink; }
+  .new_tm-box .new_tm {
+    height: 390px;
+    width: 1190px;
+    background: brown;
+    margin: 0 auto;
+    padding-top: 20px; }
+    .new_tm-box .new_tm .new_tm_l {
+      float: left;
+      width: 305px;
+      height: 370px;
+      overflow: hidden;
+      position: relative;
+      background: #F4F4F4 no-repeat center 40%; }
+      .new_tm-box .new_tm .new_tm_l img {
+        width: 305px;
+        height: 370px; }
+    .new_tm-box .new_tm .new_tm_r {
+      width: 885px;
+      height: 370px;
+      float: left; }
+      .new_tm-box .new_tm .new_tm_r li img {
+        width: 285px;
+        height: 180px;
+        margin-left: 10px;
+        float: left;
+        margin-bottom: 10px; }
+
+/* 用户注册 */
+.header-height {
+  height: 110px;
+  background: #f3f3f3; }
+  .header-height .wrap {
+    width: 950px;
+    margin: 0 auto; }
+
+.header-height1 {
+  height: 110px;
+  background: #ffffff; }
+  .header-height1 .wrap {
+    width: 950px;
+    margin: 0 auto; }
+
+.header-logo {
+  float: left;
+  margin-top: 29px; }
+
+.fl {
+  float: left;
+  display: inline; }
+  .fl img {
+    background: #fff; }
+
+.main {
+  margin: 0px auto;
+  background: #f3f3f3; }
+  .main .main-center {
+    width: 950px;
+    height: 665px;
+    background: #fff;
+    border: 1px solid #e1dfda;
+    margin: 0 auto; }
+    .main .main-center .center-top {
+      height: 30px;
+      border-bottom: 1px solid #e1dfda;
+      padding: 10px 20px;
+      line-height: 30px; }
+      .main .main-center .center-top .title-info {
+        float: left;
+        font-size: 16px;
+        font-family: 'Microsoft YaHei';
+        color: #ff002a; }
+      .main .main-center .center-top .title-login {
+        float: right;
+        font-family: 'Microsoft YaHei';
+        color: #63625d;
+        font-size: 12px; }
+        .main .main-center .center-top .title-login a {
+          color: #0088cc; }
+    .main .main-center .center-bottom {
+      width: 759px;
+      height: 490px;
+      padding: 50px 0 74px 191px; }
+      .main .main-center .center-bottom .registered-info {
+        width: 759px;
+        height: 488px; }
+        .main .main-center .center-bottom .registered-info form {
+          display: block; }
+          .main .main-center .center-bottom .registered-info form .registered {
+            position: relative; }
+            .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data {
+              padding: 16px 0px; }
+              .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .name {
+                float: left;
+                font-size: 15px;
+                font-family: 'Microsoft YaHei';
+                color: #333333;
+                float: left;
+                width: 136px;
+                text-align: right;
+                line-height: 36px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .name i {
+                  color: #df3d36; }
+              .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div {
+                float: left;
+                padding-left: 5px;
+                display: inline;
+                width: 300px;
+                height: 36px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div input {
+                  line-height: 32px;
+                  font-size: 16px;
+                  vertical-align: middle;
+                  padding: 0 10px 0 30px;
+                  text-indent: 0px;
+                  font-size: 12px;
+                  font-family: 'Microsoft YaHei';
+                  color: #000;
+                  width: 256px;
+                  height: 32px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div #ip {
+                  line-height: 32px;
+                  font-size: 16px;
+                  vertical-align: middle;
+                  padding: 0 10px 0 30px;
+                  text-indent: 0px;
+                  font-size: 12px;
+                  font-family: 'Microsoft YaHei';
+                  color: #000;
+                  width: 156px;
+                  height: 32px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div .register-code {
+                  float: left;
+                  width: 90px;
+                  height: 36px;
+                  margin: 0 11px 0 10px;
+                  border: 1px solid #e1dfda;
+                  position: relative;
+                  left: 200px;
+                  top: -36px; }
+                  .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div .register-code button {
+                    width: 90px;
+                    height: 36px;
+                    border: 1px solid #c8c8c8;
+                    background: #f5f5f5;
+                    cursor: pointer; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .loginPerfect-input-div .ftx23 a {
+                  color: #0084cc;
+                  text-decoration: underline;
+                  font-size: 12px;
+                  position: relative;
+                  left: 100px; }
+              .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .prompt {
+                margin-left: 10px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .prompt img {
+                  float: left;
+                  width: 16px;
+                  height: 16px;
+                  margin-top: 10px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .prompt span {
+                  margin-left: 8px;
+                  display: inline;
+                  line-height: 36px;
+                  font-size: 12px;
+                  color: #000000; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .prompt i.strength {
+                  background: #cccccc;
+                  color: #ffffff;
+                  display: inline-block;
+                  height: 20px;
+                  line-height: 20px;
+                  margin-left: 2px;
+                  margin-top: 8px;
+                  text-align: center;
+                  width: 24px; }
+                .main .main-center .center-bottom .registered-info form .registered .loginPerfect-data .prompt i.active {
+                  background-color: #FF0000; }
+          .main .main-center .center-bottom .registered-info form .loginPerfect-remember {
+            height: 55px;
+            padding-left: 140px;
+            line-height: 18px;
+            overflow: hidden;
+            padding-top: 15px;
+            color: #666666;
+            background: #fff; }
+            .main .main-center .center-bottom .registered-info form .loginPerfect-remember label {
+              float: left;
+              cursor: pointer;
+              outline: none;
+              padding-right: 10px; }
+              .main .main-center .center-bottom .registered-info form .loginPerfect-remember label .clicked img {
+                border: none;
+                width: 13px;
+                height: 13px;
+                margin-left: -116px; }
+              .main .main-center .center-bottom .registered-info form .loginPerfect-remember label span {
+                float: left;
+                margin-left: 32px;
+                display: inline;
+                font-family: 'Microsoft YaHei';
+                font-size: 12px; }
+            .main .main-center .center-bottom .registered-info form .loginPerfect-remember a {
+              color: #0088ca !important;
+              font-size: 12px; }
+            .main .main-center .center-bottom .registered-info form .loginPerfect-remember .checkbox {
+              position: relative;
+              left: -120px; }
+          .main .main-center .center-bottom .registered-info form .register-button {
+            padding-left: 134px;
+            height: 36px;
+            width: 300px;
+            overflow: hidden; }
+            .main .main-center .center-bottom .registered-info form .register-button button {
+              height: 36px;
+              width: 300px;
+              overflow: hidden;
+              color: #ffffff;
+              background: #e6133c;
+              font-size: 16px;
+              cursor: pointer;
+              border: 0;
+              text-align: center;
+              font-family: 'Microsoft YaHei';
+              border-radius: 2px; }
+  .main .newicon {
+    position: relative;
+    top: -29px;
+    left: 10px; }
+  .main .newicon1 {
+    position: relative;
+    top: 2px;
+    left: -196px; }
+  .main .prompt1 span {
+    position: relative;
+    top: -29px;
+    left: 200px; }
+
+/* 用户登录 */
+.login-main {
+  padding: 30px 0 25px;
+  height: 545px;
+  width: 100%;
+  background: url(../images/login-body.jpg) no-repeat center bottom; }
+  .login-main .login-content {
+    width: 488px;
+    height: 545px;
+    margin: 0 auto;
+    border: 6px solid #e2e2e2;
+    background: #fff;
+    font-family: 'Microsoft YaHei'; }
+    .login-main .login-content .login-mian-center {
+      width: 300px;
+      height: 455px;
+      margin: 0 auto;
+      padding: 45px 0;
+      position: relative; }
+      .login-main .login-content .login-mian-center ul {
+        width: 300px;
+        height: 314px; }
+        .login-main .login-content .login-mian-center ul .login-title {
+          width: 300px;
+          height: 50px; }
+          .login-main .login-content .login-mian-center ul .login-title .login-tab-sm {
+            width: 149px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 15px;
+            float: left;
+            text-align: right;
+            font-size: 18px;
+            color: #333;
+            cursor: pointer; }
+          .login-main .login-content .login-mian-center ul .login-title .login-tab-sm1 {
+            text-align: left;
+            border-right: 1px solid #ddd; }
+          .login-main .login-content .login-mian-center ul .login-title .login-tab-sm.cur {
+            color: #FF4A4A;
+            font-weight: 700; }
+        .login-main .login-content .login-mian-center ul .main-login {
+          width: 300px;
+          height: 240px;
+          padding-top: 75px; }
+          .login-main .login-content .login-mian-center ul .main-login .login-item {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            position: relative;
+            width: 300px;
+            height: 46px; }
+            .login-main .login-content .login-mian-center ul .main-login .login-item input {
+              padding-left: 35px;
+              width: 250px;
+              font-size: 12px;
+              vertical-align: middle;
+              width: 299px;
+              height: 36px; }
+            .login-main .login-content .login-mian-center ul .main-login .login-item .newicon {
+              position: absolute;
+              top: 8px;
+              left: 10px; }
+  .login-main #alert_info {
+    width: 300px;
+    height: 30px;
+    padding: 0 0 10px;
+    margin-top: 0px; }
+  .login-main #btn {
+    width: 338px;
+    height: 36px;
+    color: #ffffff;
+    background-color: #e6133c;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    text-align: center; }
+
+/* 商品 */
+.alsolike {
+  width: 1200px;
+  height: 1500px;
+  margin: 0 auto;
+  background: #fff; }
+  .alsolike .featured_tit {
+    margin: 8px 4px;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    font-weight: 400;
+    border-bottom: 1px solid #666; }
+    .alsolike .featured_tit .guess_love {
+      width: 255px;
+      padding-left: 65px;
+      height: 30px;
+      margin: 0 auto; }
+    .alsolike .featured_tit span {
+      margin-left: 5px;
+      font-size: 16px;
+      color: #999; }
+  .alsolike .featured_log {
+    text-align: right;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #999999;
+    padding-right: 5px; }
+    .alsolike .featured_log a {
+      color: #ff6f6f; }
+  .alsolike .like_class {
+    height: 340px;
+    margin-bottom: 10px; }
+    .alsolike .like_class li {
+      float: left;
+      height: 340px;
+      margin: 0 5px;
+      position: relative;
+      width: 230px;
+      background: #fff;
+      margin-bottom: 10px; }
+      .alsolike .like_class li .pro-show {
+        height: 338px;
+        width: 228px;
+        border: 1px solid #e4e4e4;
+        background: #fff; }
+        .alsolike .like_class li .pro-show .pro-img {
+          height: 220px;
+          width: 220px;
+          padding: 4px; }
+        .alsolike .like_class li .pro-show .pro-name {
+          padding: 0 11px;
+          margin-top: 5px;
+          color: #333;
+          line-height: 21px;
+          height: 42px;
+          overflow: hidden;
+          color: #666;
+          font-size: 14px; }
+        .alsolike .like_class li .pro-show .pro-money {
+          padding: 0 11px;
+          height: 26px;
+          margin-top: 3px;
+          position: relative; }
+          .alsolike .like_class li .pro-show .pro-money .money-fl {
+            color: #ff6f6f;
+            font-family: Verdana,Geneva,sans-serif;
+            font-size: 18px;
+            line-height: 26px; }
+            .alsolike .like_class li .pro-show .pro-money .money-fl a {
+              float: right;
+              padding: 0 10px 0 25px;
+              height: 20px;
+              margin-top: 3px;
+              line-height: 18px;
+              border: 1px solid #eee;
+              color: #999;
+              border-radius: 11px;
+              font-size: 12px; }
