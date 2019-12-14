@@ -543,9 +543,10 @@
                     box-shadow: -2px 0 2px rgba(0,0,0,.2);
                     -moz-box-shadow: -2px 0 2px rgba(0,0,0,.2);
                     -webkit-box-shadow: -2px 0 2px rgba(0,0,0,.2);
-                    li{
+                    .item{
                         height: 29px;
                         line-height: 29px;
+                        width:188px;
                         padding-left: 14px;
                         cursor: pointer;
                             span{ 
@@ -587,33 +588,41 @@
                                     }
                                     .menu_floor{
                                         width: 722px;
-                                        margin: 6px 0 0 5px;
-                                        height: 23px;
+                                        padding: 6px 0 0 5px;
+                                        height: 418px;
                                         position: relative;
                                         float: left;
-                                        .menu_floor_a {
-                                            width: 700px;
-                                            float: left;
-                                            padding-bottom: 5px;
-                                            border-bottom: 1px dashed #c2bebe;
-                                            color:black;
-                                            a{
-                                                font-size:12px;
-                                                line-height: 23px;
-                                                padding-right:4px;
+                                        color:black;
+                                        .menu_floor_a{
+                                                width: 680px;
+                                                float: left;
+                                                height: 26px;
+                                                padding:8px 0px;
+                                                border-bottom: 1px dashed #f3f3f3; 
+                                                a{
+                                                    margin-right:10px;
+                                                    font-size:12px; 
+                                                    line-height: 26px;
+                                                }
+                                                a:first-child{
+                                                    color:black;
+                                                    font-weight:700;
+                                                    font-size:12px;
+                                                }  
                                             }
-                                            a:first-child{
-                                                font-size:12px;
-                                                font-weight:700;
-                                                color:black; 
+        
+                                            a:hover{
+                                                color:red;
+                                                text-decoration:underline;
                                             }
-                                        }
                                     }
                                 }
                             }
                         }
-
                       }
+                      .item-active{
+                        background:#8d8d8d;  
+                    }
                 }   
             }
           

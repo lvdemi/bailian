@@ -28,44 +28,59 @@ define(["jquery"],function($){
                }
 
                //左侧侧边栏的数据
-                var sidnavArr = obj.sidnav;
-                
+                var sidnavArr = obj.sideNav;
                for(var i = 0; i < sidnavArr.length; i++){
-                 var node = $(`<li>
-                 <a href="#"><span>${sidnavArr[i].title}</span></a>
-                 <div class="left-ul-show">
+                var childArr = sidnavArr[i].child;
+                
+                 var node = $(`<li class = "item">
+                 <a href="#"><span>${sidnavArr[i].Title}</span></a>
+                 <div class="left-ul-show" style = 'display: none'>
                      <ul class="left-ul-nv">
                      <li>
-                        
+                     <div class="menu_floor">
+                     
+                     </div>
                          <div class="menu_right_img">
-                             <a href="#"><img src="" alt="" style="width:240px; height:203px; margin-bottom: 5px; "></a>
+
                          </div>
                       </li> 
                      </ul>
                  </div> 
              </li> `);
              node.appendTo(".nav-show");
-             //取出所有数据
-             var ChildArr = sidnavArr[i].child;
-            
-             /* for(var j = 0; j < ChildArr.length; j++){
-                 $(`<div class="menu_floor">
-                 <div class="menu_floor_a">
-                     <a href="#">${ChildArr[j].title}</a>
-                  </div>
-                </div>`).appendTo(node.find("li"));
-                } */
-          /*   var imgARR = sidnavArr[i].rightImg;
-            for(var k = 0; k < imgARR.length; k++){
-                $(`<a href="#"><img src="" alt="images/${imgARR[k]}" style="width:240px; height:203px; margin-bottom: 5px; "></a>`).appendTo(node.find("div"));
-            } */
 
-         } 
-            },
+             //取出所有数据
+           for(var j = 0; j < childArr.length; j++){
+               if(j % 14 == 0){
+                   var oDiv = $(`<div class="menu_floor_a">
+
+                   </div>`);
+               }
+            $(`<a href="#">${childArr[j].title}</a>`).appendTo(oDiv);
+            oDiv.appendTo(node.find(".menu_floor"))
+           }  
+           var imgARR = sidnavArr[i].rightImg;
+            for(var k = 0; k < imgARR.length; k++){
+                $(`<a href="#"><img src="images/${imgARR[k]}" alt="" style="width:240px; height:203px; margin-bottom: 5px; "></a>`).appendTo(node.find(".menu_right_img"));
+            } 
+
+         }
+        
+    },
             error: function(msg){
                 console.log(msg);
             }
 
+        })
+    }
+    function leftNavtab(){
+        $(".nav-show").on("mouseenter",".item", function(){
+            $(this).addClass("item-active");
+            $(this).find(".left-ul-show").show();
+        })
+        $(".nav-show").on("mouseleave",".item", function(){
+            $(this).removeClass("item-active");
+            $(this).find(".left-ul-show").hide();
         })
     }
   //轮播图效果
@@ -157,6 +172,7 @@ define(["jquery"],function($){
         download: download,
         bannerTab: bannerTab,
         product:product,
+        leftNavtab:leftNavtab,
         
     }
 })

@@ -1,13 +1,75 @@
 { "banner":[{"img":"images/1.jpg","url":"https://img22.iblimg.com/market-3/images/activity/1492715753.jpg"},
-      {"img":"images/2.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
-      {"img":"images/3.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
-      {"img":"images/4.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
-      {"img":"images/5.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"}],
-"sidnav":[{"title":"百联进口 全球购"},{"title":"生鲜食品"},{"title":"食品粮油 酒水冲饮"},
-            {"title":"美容护理"},{"title":"餐厨用具 家居家装"},{"title":"母婴玩具"},{"title":"家清 纸品 一次性"},
-            {"title":"女装男装"},{"title":"鞋靴箱包 珠宝饰品"},{"title":"手机数码 电脑办公"},{"title":"家用电器"},
-            {"title":"运动户外 汽车用品"},{"title":"营养保健 第一医药"},{"title":"礼品卡 充值 图书"}]  
-}
-
-
-
+    {"img":"images/2.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
+    {"img":"images/3.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
+    {"img":"images/4.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"},
+    {"img":"images/5.jpg","url":"https://img22.iblimg.com/market-3/images/activity/294521100.jpg"}],
+"sideNav":[
+    {"Title":"百联进口 全球购",
+        "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+             {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+             {"title":"口红"},{"title":"美妆工具"},{"title":"个人护理 >"},{"title":"洗发水"},{"title":"护发素"},{"title":"沐浴露"}],"rightImg":["397669452.jpg","43327109.jpg"]},
+    {"Title":"生鲜食品",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"食品粮油 酒水冲饮",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"美容护理",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"餐厨用具 家居家装",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"母婴玩具",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"家清 纸品 一次性",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"女装男装",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"鞋靴箱包 珠宝饰品",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"手机数码 电脑办公",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"家用电器",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"运动户外 汽车用品",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"营养保健 第一医药",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+},
+{"Title":"礼品卡 充值 图书",
+    "child":[{"title":"美妆护肤 >"},{"title":"面膜"},{"title":"乳液/面霜"},{"title":"护肤套装"},{"title":"眼部护"},
+        {"title":"面部精华"},{"title":"美容仪"},{"title":"洁面"},{"title":"卸妆"},{"title":"彩妆"},{"title":"香水"},{"title":"男士护肤"},
+        {"title":"口红"},{"title":"美妆工具"},{"title":"美妆护肤 >"},{"title":"美妆护肤 >"}],"rightImg":["397669452.jpg","43327109.jpg"]
+ }]}

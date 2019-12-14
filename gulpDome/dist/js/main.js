@@ -24,4 +24,5 @@ require(['nav'], function(nav){
     nav.download();
     nav.bannerTab();
     nav.product();
+    nav.leftNavtab();
 })
