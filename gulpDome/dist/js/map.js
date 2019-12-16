@@ -32,9 +32,37 @@ define(['jquery'], function($){
                left: -2 * l,
                top: -2 * t
            })
-       })
+       });
 
-   }
+       $.ajax({
+           url: "data/nav.json",
+           success: function(data){
+            var bigImg = data.bigImg;
+            //  console.log(bigImg);
+            for(var i = 0; i < bigImg.length; i++){
+                $(`<li><img src="${bigImg[i].img}"style="display:inline;" id = '${bigImg[i].id}'></li>`).appendTo(".items ul")
+            };
+           
+           
+           },
+           error: function(msg){
+                console.log(msg);
+           }
+       })
+     
+
+    }
+/* 放大图片切换 */
+    function bigTab(){
+        var oUl = $(".items").find("ul");
+        $(".prev").click(function(){
+            oUl.animate({left:-180}, 500);
+        });
+        $(".next").click(function(){
+            oUl.animate({left:0}, 500);
+        }) 
+    }
+
 /* 注册 */
   function register(){
   //用户名验证
@@ -231,10 +259,44 @@ define(['jquery'], function($){
             return str;
         }
         
-   }  
+   }
+/* 放大页面 数据加载  */
+   function aliment(){
+        $.ajax({
+            url: "../data/food.json",
+            success: function(data){
+                var aFoods = data.foods;
+                console.log(aFoods);
+                for(i = 0; i < aFoods.length; i++){
+                    $(`<li>
+                    <span class="picture">
+                        <img src="${aFoods[i].img}" alt="">
+                    </span>
+                    <span class="name">${aFoods[i].title}</span>
+                    <span class="price">￥
+                        <i>${aFoods[i].pirce}</i>
+                    </span>
+                </li>`).appendTo(".emption-box ul")
+                }
+            }
+        })
+   }
+/* 图片切换 */
+   function bigTab1(){
+    var oUl = $(".emption-box").find("ul");
+    $(".prevr").click(function(){
+        oUl.animate({left:-1190}, 500);
+    });
+    $(".nextr").click(function(){
+        oUl.animate({left:0}, 500);
+    }) 
+}
     return {
         cake:cake,
-        register:register,
+      /*   register:register, */
+        bigTab:bigTab,
+        aliment:aliment,
+        bigTab1:bigTab1,
     }
     
 });

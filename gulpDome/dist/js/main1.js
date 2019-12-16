@@ -22,5 +22,8 @@ require.config({
 
 require(['map'], function(map){
    map.cake();
-   map.register();
+ /*   map.register(); */
+   map.bigTab();
+   map.aliment();
+   map.bigTab1();
 })
