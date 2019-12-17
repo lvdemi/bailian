@@ -1,7 +1,7 @@
 /* 
     遵从AMD规范
 */
-define(['jquery'], function($){
+define(["jquery","jquery-cookie"], function($){
 /* 放大镜 */
    function cake(){
        $(".intro-left").mouseenter(function(){
@@ -33,7 +33,7 @@ define(['jquery'], function($){
                top: -2 * t
            })
        });
-
+/* 放大镜的数据加载 */
        $.ajax({
            url: "data/nav.json",
            success: function(data){
@@ -266,7 +266,7 @@ define(['jquery'], function($){
             url: "../data/food.json",
             success: function(data){
                 var aFoods = data.foods;
-                console.log(aFoods);
+                // console.log(aFoods);
                 for(i = 0; i < aFoods.length; i++){
                     $(`<li>
                     <span class="picture">
@@ -278,8 +278,125 @@ define(['jquery'], function($){
                     </span>
                 </li>`).appendTo(".emption-box ul")
                 }
-            }
+                var Foodleft = data.foodleft;
+                // console.log(Foodleft);
+            for(var j = 0; j < Foodleft.length; j++){
+                $(`<li>
+                <div class="pro-show">
+                    <div class="pro-img">
+                        <a href="#"><img src="${Foodleft[j].img}" alt="" style="width:200px; height:200px"></a>
+                    </div>
+                    <div class="pro-name">
+                        <a href="#">${Foodleft[j].title}</a>
+                    </div>
+                    <div class="pro-money">
+                        ￥<i>${Foodleft[j].pirce}</i>
+                    </div>
+                </div>
+            </li>`).appendTo(".pro-class")
+             }
+/* 加载购物车*/
+             var bigfoods = data.bigfood;
+            //   console.log(bigfoods);
+             for(k = 0 ; k < bigfoods.length; k++){
+                $(` <li>
+                <div class="pro-show">
+                    <div class="pro-img">
+                        <a href="#"><img src="${bigfoods[k].img}" alt=""></a>
+                    </div>
+                    <div class="pro-money">
+                    <div class="money-fl">￥${bigfoods[k].pirce}</div>
+                    </div>
+                    <div class="product-comment">
+                        <div class="pro-name ">
+                            <a href="#">台尚 蛋酥沙琪玛 540g</a>
+                        </div>
+                        <div class="pro-info">新老包装随机发放</div>
+                    </div>
+                    <div class="pro-assess">
+                        <div class="pro-assess-right">自营联华
+						</div>
+                    </div>
+                    <div class="pro-button">
+                        <button type="button" class="btn btn-primary addCard"  id = "${bigfoods[k].id}">加入购物车</button>
+                    </div>
+                </div>
+            </li>`).appendTo(".pro-class1")}
+           } 
         })
+//给加入购物车按钮添加点击事件
+        $(".pro-class1").on("click", ".btn", function(){
+            var id  = this.id;
+            //判断是否是第一次存储
+            var first = $.cookie("goods") == null ? true : false;
+            if(first){
+            //是第一次存储
+            var arr = [{id: id, num: 1}];
+			$.cookie("goods", JSON.stringify(arr), {
+						expires: 7
+			})
+         }else{
+             //判断之前是否添加过
+             var cookieStr = $.cookie("goods");
+             var cookieArr = JSON.parse(cookieStr);
+             var same = false; //假设没有存储过
+                    //通过循环遍历是否有之前存储过的商品
+            for(var i = 0; i < cookieArr.length; i++){
+                if(cookieArr[i].id == id){
+                    cookieArr[i].num++;
+					same = true;
+					break;
+                }
+            }
+            //判断如果没有添加过
+            if(!same){
+                var obj = {id: id, num: 1};
+                cookieArr.push(obj);
+            }
+            $.cookie("goods", JSON.stringify(cookieArr), {
+                expires: 7
+            }) 
+         }
+         /* 
+				统计购物车里商品数量
+        */
+       function sc_num(){
+        var cookieStr = $.cookie("goods");
+           if(cookieStr){
+            var cookieArr = JSON.parse(cookieStr);
+            var sum = 0;
+            for(var i = 0; i < cookieArr.length; i++){
+                sum += cookieArr[i].num;
+            }
+           }else{
+               
+           }
+       }
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    }
 /* 图片切换 */
    function bigTab1(){
