@@ -695,6 +695,11 @@
             }
         }
     }
+   #box{
+         position: absolute;
+        display:none;
+
+    } 
 }
 /* 购物车 */
 #trade-head {
@@ -814,7 +819,9 @@
     height:auto;
     background:#ddd;
     margin:0 auto;
+    margin-bottom:20px;
     .cart-table-line {
+        border-bottom:1px solid #666;
         width: 990px;
         height: 110px;
         position: relative;
@@ -845,6 +852,10 @@
             left:400px;
             top:5px;
             font-size:12px;
+            .price{
+                display: inline;
+            }
+          
         }
         .number-box {
             width: 80px;
@@ -872,7 +883,7 @@
             em:hover{
                 border: 1px solid #aaa;
             }
-            .num{
+            .sc_number{
                 width: 40px;
                 height: 24px;
                 line-height: 24px;
@@ -897,5 +908,43 @@
         .action-box:hover{
             color:red;
         }
+    }
+}
+.pay-form {
+    width: 990px;
+    height:50px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    .pay-line {
+        width: 990px;
+        height: 50px;
+        background: #f3f3f3;
+        line-height: 50px;
+        .sc_btn{
+            width:50px;
+            margin-left:39px;
+            float:left;
+            text-align: center;
+            font-size:14px;
+     }
+     .sc_x{
+        width:150px;
+        margin-left:333px;
+        float:left;
+    }
+    .sc{
+        float:left;
+        width:120px;
+    }
+    .sc_pir{
+        float: right;
+        width:120px;
+        text-align:center;
+        background: #d62233;
+        color: #fff;
+        font-family: "Microsoft YaHei";
+    }
     }
 }

@@ -72,11 +72,11 @@
 /* banner-end */
 .new_tm-box {
   height: 390px;
-  background: pink; }
+  background: #ffff; }
   .new_tm-box .new_tm {
     height: 390px;
     width: 1190px;
-    background: brown;
+    background: #ffff;
     margin: 0 auto;
     padding-top: 20px; }
     .new_tm-box .new_tm .new_tm_l {
@@ -86,9 +86,12 @@
       overflow: hidden;
       position: relative;
       background: #F4F4F4 no-repeat center 40%; }
-      .new_tm-box .new_tm .new_tm_l img {
-        width: 305px;
-        height: 370px; }
+    .new_tm-box .new_tm .new_tm_l_s {
+      width: 305px;
+      height: 370px;
+      position: absolute;
+      left: 165px;
+      overflow: hidden; }
     .new_tm-box .new_tm .new_tm_r {
       width: 885px;
       height: 370px;

@@ -168,11 +168,88 @@ define(["jquery"],function($){
            
        })
    }
+/* 中心放大 */
+   function magnify(){
+  /*   function startMove(node, cssObj, complete){
+        clearInterval(node.timer);
+        node.timer = setInterval(function(){
+            var isEnd = true; //假设都到达目的值
+            for(var attr in cssObj){
+                var iTarget = cssObj[attr];
+                //获取当前值
+                var iCur = null;
+                if(attr == "opacity"){
+                    iCur = parseInt(parseFloat(getStyle(node, "opacity")) * 100);
+                }else{
+                    iCur = parseInt(getStyle(node, attr))
+                }
+                var speed = (iTarget - iCur) / 6;
+                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+    
+                    //node.style["width"]
+                if(attr == "opacity"){
+                    iCur += speed;
+                    node.style.opacity = iCur / 100;
+                    node.style.filter = "alpha(opacity=" + iCur + ")";
+                }else{
+                    node.style[attr] = iCur + speed + 'px';
+                }
+                //如果其中有一个没有到达目的值
+                if(iCur != iTarget){
+                    isEnd = false;
+                }
+            }
+            if(isEnd){
+                clearInterval(node.timer);
+                if(complete){
+                    complete.call(node);
+                }
+            }
+    
+        }, 30);
+    }
+    //封装一个获取当前有效样式的跨浏览器兼容的方法
+function getStyle(node, cssStyle){
+    if(node.currentStyle){
+        return node.currentStyle[cssStyle];
+    }else{
+        return getComputedStyle(node)[cssStyle];
+    }
+}
+    $(".new_tm_l_s img").mouseenter(function(){
+        startMove(this,{
+            width:342,
+            height:389,
+             marginLeft: -19,
+             marginTop: -17
+           
+        })
+    });
+    $(".new_tm_l_s img").mouseleave(function(){
+        startMove(this,{
+            width:305,
+            height:370,
+            marginLeft: 0,
+            marginTop: 0
+        })
+    })
+
+    */
+  
+
+
+
+   }
+
+
+
+
+
     return {
         download: download,
         bannerTab: bannerTab,
         product:product,
         leftNavtab:leftNavtab,
-        
+        magnify:magnify,
     }
 })

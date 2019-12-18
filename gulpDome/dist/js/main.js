@@ -25,4 +25,5 @@ require(['nav'], function(nav){
     nav.bannerTab();
     nav.product();
     nav.leftNavtab();
+    nav.magnify();
 })
