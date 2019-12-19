@@ -26,4 +26,5 @@ require(['nav'], function(nav){
     nav.product();
     nav.leftNavtab();
     nav.magnify();
+    nav.register();
 })

@@ -114,12 +114,17 @@
             width:885px;
             height:370px;
             float:left;
-            li img{
+            li{
                 width:285px;
                 height:180px;
+                overflow: hidden;
                 margin-left:10px;
                 float: left;
-                margin-bottom:10px;     
+                margin-bottom:10px; 
+                position: relative;
+                .tu{
+                    position: absolute;
+                }  
             }
             
         }
@@ -444,6 +449,25 @@
                             left: 10px;
                         }
                     }
+                    .clearfix{
+                        width:100px;
+                        height:26px;
+                    }
+                    .btn-primary {
+                        color: #ffffff;
+                        background: #e6133c;
+                        font-size: 16px;
+                        height: 36px;
+                        width:338px;
+                        border-radius: 2px;
+                        -moz-border-radius: 2px;
+                        -webkit-border-radius: 2px;
+                        outline: none;
+                        cursor: pointer;
+                        border: 0;
+                        text-align: center;
+                        font-family: 'Microsoft YaHei';
+                    }
                 }
             }
         }
@@ -451,8 +475,6 @@
      #alert_info{
         width:300px;
         height:30px;
-        padding: 0 0 10px;
-        margin-top:0px;
     }
     #btn{
         width:338px;

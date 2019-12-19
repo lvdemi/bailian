@@ -96,12 +96,16 @@
       width: 885px;
       height: 370px;
       float: left; }
-      .new_tm-box .new_tm .new_tm_r li img {
+      .new_tm-box .new_tm .new_tm_r li {
         width: 285px;
         height: 180px;
+        overflow: hidden;
         margin-left: 10px;
         float: left;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
+        .new_tm-box .new_tm .new_tm_r li .tu {
+          position: absolute; }
 
 /* 用户注册 */
 .header-height {
@@ -374,12 +378,28 @@
               position: absolute;
               top: 8px;
               left: 10px; }
+          .login-main .login-content .login-mian-center ul .main-login .clearfix {
+            width: 200px;
+            height: 22px; }
+          .login-main .login-content .login-mian-center ul .main-login .btn-primary {
+            color: #ffffff;
+            background: #e6133c;
+            font-size: 16px;
+            height: 36px;
+            width: 338px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            border: 0;
+            text-align: center;
+            font-family: 'Microsoft YaHei'; }
   .login-main #alert_info {
     width: 300px;
-    height: 30px;
-    padding: 0 0 10px;
-    margin-top: 0px; }
+    height: 10px; }
   .login-main #btn {
+    margin-top:10px;
     width: 338px;
     height: 36px;
     color: #ffffff;

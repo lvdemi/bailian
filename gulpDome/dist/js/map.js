@@ -265,7 +265,7 @@ define(["parabola","jquery","jquery-cookie"], function(parabola, $){
        sc_num();
        sc_msg();
         $.ajax({
-            url: "../data/food.json",
+            url: "data/food.json",
             success: function(data){
                 var aFoods = data.foods;
                 // console.log(aFoods);

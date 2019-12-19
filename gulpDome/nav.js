@@ -170,76 +170,60 @@ define(["jquery"],function($){
    }
 /* 中心放大 */
    function magnify(){
-  /*   function startMove(node, cssObj, complete){
-        clearInterval(node.timer);
-        node.timer = setInterval(function(){
-            var isEnd = true; //假设都到达目的值
-            for(var attr in cssObj){
-                var iTarget = cssObj[attr];
-                //获取当前值
-                var iCur = null;
-                if(attr == "opacity"){
-                    iCur = parseInt(parseFloat(getStyle(node, "opacity")) * 100);
-                }else{
-                    iCur = parseInt(getStyle(node, attr))
-                }
-                var speed = (iTarget - iCur) / 6;
-                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-    
-                    //node.style["width"]
-                if(attr == "opacity"){
-                    iCur += speed;
-                    node.style.opacity = iCur / 100;
-                    node.style.filter = "alpha(opacity=" + iCur + ")";
-                }else{
-                    node.style[attr] = iCur + speed + 'px';
-                }
-                //如果其中有一个没有到达目的值
-                if(iCur != iTarget){
-                    isEnd = false;
-                }
-            }
-            if(isEnd){
-                clearInterval(node.timer);
-                if(complete){
-                    complete.call(node);
-                }
-            }
-    
-        }, 30);
-    }
-    //封装一个获取当前有效样式的跨浏览器兼容的方法
-function getStyle(node, cssStyle){
-    if(node.currentStyle){
-        return node.currentStyle[cssStyle];
-    }else{
-        return getComputedStyle(node)[cssStyle];
-    }
-}
-    $(".new_tm_l_s img").mouseenter(function(){
-        startMove(this,{
-            width:342,
-            height:389,
-             marginLeft: -19,
-             marginTop: -17
-           
+   $(".new_tm_l_s img").hover(function(){
+        $(".new_tm_l_s img").animate({
+            width:345,
+            height:410,
+            marginLeft: -20,
+            marginTop: -20,
+            marginBottom:-20,
+            marginRight:-20,
         })
-    });
-    $(".new_tm_l_s img").mouseleave(function(){
-        startMove(this,{
+   },
+     function(){
+        $(".new_tm_l_s img").animate({
             width:305,
             height:370,
-            marginLeft: 0,
-            marginTop: 0
+            marginLeft:0,
+            marginTop: 0,
+            marginBottom:0,
+            marginRight:0,
         })
-    })
+   })
 
-    */
-  
-
-
-
+        $(".new_tm_r .tu").stop(true).mouseenter(function(){
+            $(this).animate({
+                width:315,
+                height:210,
+                marginLeft: -15,
+                marginTop: -15,
+                marginBottom:-15,
+                marginRight:-15
+            })
+        })
+        $(".new_tm_r .tu").stop(true).mouseleave(function(){
+            $(this).animate({
+                width:285,
+                 height:180,
+                 marginLeft:0,
+                 marginTop: 0,
+                 marginBottom:0,
+                 marginRight:0,
+            })
+        })
+/*  用户注册切换*/
+        var oCurr = $(".curr");
+        var aLogin = $(".login-tab-sm");
+        aLogin.click(function(){
+            $(this).addClass("cur").siblings(".login-tab-sm").removeClass("cur")
+            oCurr.hide().eq($(this).index()).show();
+        })
    }
+/* 用户注册 */
+        function register(){
+
+        }
+
 
 
 
@@ -251,5 +235,6 @@ function getStyle(node, cssStyle){
         product:product,
         leftNavtab:leftNavtab,
         magnify:magnify,
+        register:register,
     }
 })

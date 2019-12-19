@@ -33,24 +33,24 @@
                             <div class="login-tab-sm">用户登录</div>
                             <div class="main-login main-login-app curr" style="display:block;">
                                 <div class="login-item clearfix">
-                                    <input type="text" placeholder="用户名/手机号/邮箱">
+                                    <input type="text" placeholder="用户名/手机号/邮箱" name ="username">
                                     <i class="newicon">
                                         <img src="images/userpic.png" alt="">
                                     </i>
                                 </div>
                                 <div class="login-item clearfix">
-                                    <input type="password" placeholder="密码" >
+                                    <input type="text" placeholder="密码"  name ="password">
                                     <i class="newicon">
                                         <img src="images/passwordpic.png" alt="">
                                      </i>
                                 </div>
                                 <div class="login-item clearfix">
-                                    <input type="password" placeholder="确认密码" >
+                                    <input type="text" placeholder="确认密码" name ="repassword">
                                   <i class="newicon">
                                         <img src="images/passwordpic.png" alt="">
                                   </i>
                                 </div>
-                                <div class="login-item clearfix" id = 'alert_info'>
+                                <div class="login-item " id = 'alert_info'>
                                       
                                 </div>
                                 <div>
@@ -58,20 +58,23 @@
                                 </div>
                             </div>
                             <div class="main-login main-login-user curr" style="display:none;">
-                                <div class="login-item clearfix">
-                                    <input type="text" placeholder="用户名">
+                                <div class="login-item">
+                                    <input type="text" placeholder="用户名" name ="username">
                                     <i class="newicon">
                                         <img src="images/userpic.png" alt="">
                                     </i>
                                 </div>
-                                <div class="login-item clearfix">
-                                    <input type="password" placeholder="密码" >
+                                <div class="login-item">
+                                    <input type="text" placeholder="密码"  name = "password">
                                     <i class="newicon">
                                         <img src="images/passwordpic.png" alt="">
                                     </i>
                                 </div>
-                                <div class="login-item clearfix" id = 'alert_info'>
-                                      
+                                <div class="clearfix" id ="alert_info1">
+
+                                </div>
+                                <div>
+                                    <button id="loginsubmit" class="btn-primary">登入</button>
                                 </div>
                             </div>
                         </div>
